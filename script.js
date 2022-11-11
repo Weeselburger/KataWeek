@@ -69,6 +69,22 @@ closeBtnEmail.addEventListener('click', function(){
        });
 
 
+// const modalCont = [];
+// modalCont.push(modalContainer);
+// modalCont.push(secondModalContainer);
+// modalCont.push(thirdModalContainer);
+// modalCont.push(fourthModalContainer);
+// modalCont.push(emailModalContainer);
+
+//TODO: check if below is working
+//const modalCont = document.querySelector(".d-flex").childNodes()[0].childNodes();
+//TODO: check below code
+// for (const container in modalCont) {
+//     container.addEventListener('click', function(e){
+//         this.style.display = 'none';
+//     });
+// }
+
 window.addEventListener('click', function(e){
     
     if (e.target === modalContainer){
@@ -99,25 +115,13 @@ window.addEventListener('click', function(e){
 
 sucksBtn.addEventListener('click',function(){
     clickCount++;
-    if(clickCount === 1){
-    modalContainer.style.display = 'block'
-    sucksBtn.checked =false;
-    }
-    if(clickCount === 2){
-        secondModalContainer.style.display = 'block';
-        sucksBtn.checked =false;
-
-    }if (clickCount ===3){
-        
-      
-        thirdModalContainer.style.display = 'block';
-        sucksBtn.checked =false;
-
-    }if(clickCount ===4){
-        sucksBtn.checked =false;
-        
-        clickCount = 0;
-    }
+    clickCount %= 4;
+    
+    if(clickCount<=3) {
+        modalCont[clickCount-1].style.display = 'block';        
+    } 
+    sucksBtn.checked = false;
+    
 })
 
 mehBtn.addEventListener('click',function(){
