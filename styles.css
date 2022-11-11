@@ -1,0 +1,101 @@
+#modal{
+    background-color:  #fff;
+    color: black;
+    position: absolute;
+    top: 20%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 120px;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+#close-btn, #close-btn2, #close-btn3, #close-btn4, #close-btn-email{
+    font-size: 3rem;
+
+}
+#close-btn, #close-btn2, #close-btn3, #close-btn4, #close-btn-email{
+    cursor: pointer;
+    font-size: 3rem;
+    color: #ff0000;
+}
+#modal-container, #modal-container2, #modal-container3, #modal-container4,#modal-container5{
+    display:none;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+@media(min-width: 768px){
+    .news-input{
+            width:50%;
+           
+    }
+}
+#modalEmail{
+    background-color:  #fff;
+    color: black;
+    position: absolute;
+    top: 37%;
+    left:93%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 120px;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+#modal-Email{
+    display:none;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.background-gb{
+    background-color: gainsboro;
+}
+#drop-down-red-btn-div,#drop-down-red-btn-div2{
+    display:none;
+}
+
+#modal-drop-down{
+    background-color:  #fff;
+    color: black;
+    position: absolute;
+    top: 20%;
+    left:25%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 120px;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation-name: animatemodal;
+    animation-duration: .4s;
+}
+#bluescreen-img1, #bluescreen-img{
+    display: none;
+}
